@@ -1,0 +1,20 @@
+<cu-custom bgColor="bg-gradual-green" isBack="{{true}}"><view slot="backText">返回</view><view slot="content">关于</view></cu-custom>
+<view class='margin-xl bg-white padding-xl radius shadow-lg'>
+  <view class='text-center margin-bottom text-lg  text-grey'>关于《也无风雨也无晴》</view>
+  <view class='text-content'>
+    <view>很高兴能在这里见到你~</view>
+    <view class='margin-top-sm'>首先感谢所有提供支持的开发者和平台:</view>
+    <view class='margi1n-top-sm'>- 今日诗词</view>
+    <view class='margi1n-top-sm'>- 天气API（对，就叫做天气API）</view>
+    <view class='margi1n-top-sm'>- ColorUI组件（文晓港）</view>
+    <view class='margi1n-top-sm'>- 开源小程序《QuietWeather》</view>
+    <view class='margi1n-top-sm'>- B站视频《如何快速编写一个天气查询的微信小程序》（只有最后2p有帮助）</view>
+    <view class='margi1n-top-sm'>- 灵感来自《雨时》，诗意地查看天气。</view>
+    <view class='margin-top-sm'>没有你们的帮助就没有这个项目。</view>
+    <view class="margin-top-sm">感谢！ ♪(･ω･)ﾉ</view>
+    <view class='margin-top-sm'>通过IP网络地址获取地区，根据时间、地点、天气、事件智能推荐诗句；再结合天气API得到该地区的天气，也可以进一步选择详细到县级的位置。</view>
+    <view class='margin-top-sm'>专业课曾经上过API相关课程，也大概懂得怎么调用API去获取相关的数据。有想过做个小程序，又一直在拖延，也不知道怎么最近就突然开始动手做了。做出这个粗糙的小程序花了大概一周左右的时间，没接触过Javascipt，边学边写。</view>
+    <view class='margin-top-sm'>这个小程序会开源在Github、Gitee平台，希望能帮助到有需要的你~\(^o^)/~</view>
+    <view class='margin-top-sm'>更多功能，慢慢来。</view>
+  </view>
+</view>

@@ -1,0 +1,69 @@
+<cu-custom bgColor="bg-gradual-green" isBack="{{true}}"><view slot="backText">返回</view><view slot="content">日志</view></cu-custom>
+<view class="cu-timeline">
+  <view class="cu-item text-green">
+    <view class="bg-gradual-green content shadow">
+      <view class="cu-capsule radius">
+        <view class="cu-tag bg-white text-green">v1.1.0</view>
+        <view class="cu-tag line-white">2020/11/26</view>
+      </view>
+      <view class="margin-top-sm text-content">
+        <view>1.修复安卓手机不显示按钮。</view>
+        <view>2.更换动态背景色调。</view>
+        <view>3.增加“更新日志”。</view>
+        <view>4.修复“关于”页中logo不明显的小问题。</view>
+      </view>
+    </view>   
+  </view>
+  <view class="cu-item text-green">
+    <view class="bg-green content shadow">
+      <view class="cu-capsule radius">
+        <view class="cu-tag bg-white text-green">v1.0.0</view>
+        <view class="cu-tag line-white">2020/11/25</view>
+      </view>
+      <view class="margin-top-sm text-content">
+        <view>1.增加集合功能按钮。</view>
+        <view>2.增加“关于”页面。</view>
+        <view>3.增加赞赏码。</view>
+        <view>4.增加今日天气功能（默认ip位置，可在集合功能按钮中选择）。</view>
+      </view>
+    </view>
+  </view>
+  <view class="cu-item text-green">
+    <view class="bg-green content shadow">
+      <view class="cu-capsule radius">
+        <view class="cu-tag bg-white text-green">v0.9.1</view>
+        <view class="cu-tag line-white">2020/11/24</view>
+      </view>
+      <view class="margin-top-sm text-content">
+        <view>1.增加刷新页面按钮（重新获得诗词）。</view>
+      </view>
+    </view>
+  </view>
+  <view class="cu-item text-green">
+    <view class="bg-green content shadow">
+      <view class="cu-capsule radius">
+        <view class="cu-tag bg-white text-green">v0.9.0</view>
+        <view class="cu-tag line-white">2020/11/23</view>
+      </view>
+      <view class="margin-top-sm text-content">
+        <view>1.正式上线发布。</view>
+        <view>2.增加诗词推荐功能。</view>
+        <view>3.增加点击诗词题目出现完整的诗词内容。</view>
+        <view>4.调整诗词样式排版。</view>
+        <view>5.增加动态背景。</view>
+      </view>
+    </view>
+  </view>
+  <view class="cu-item text-green">
+    <view class="bg-green content shadow">
+      <view class="cu-capsule radius">
+        <view class="cu-tag bg-white text-green">v0.0.0</view>
+        <view class="cu-tag line-white">2020/11/21</view>
+      </view>
+      <view class="margin-top-sm text-content">
+        <view>项目启动</view>
+      </view>
+    </view>
+  </view>
+
+</view>

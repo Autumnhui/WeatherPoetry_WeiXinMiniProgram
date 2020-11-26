@@ -1,0 +1,52 @@
+<cu-custom bgColor="bg-gradual-green" isBack="{{true}}"><view slot="backText">返回</view><view slot="content">关于</view></cu-custom>
+<scroll-view scroll-y class="scrollPage">
+  <view class="UCenter-bg">
+    <image src="/img/logo.png" class="png" mode="widthFix" style="filter: contrast(0);"></image>
+    <view class="text-xl">也无风雨也无晴
+    </view>
+    <view class="margin-top-sm">
+      <text>By:Autumnhui</text>
+    </view>
+    <image src="/img/download.gif" mode="scaleToFill" class="gif-wave"></image>
+  </view>
+
+  <view class="cu-list menu card-menu margin-top-xl margin-bottom-xl shadow-lg radius">
+    <view class="cu-item arrow">
+      <view class="content" bindtap="CopyLink" data-link="https://github.com/autumnhui">
+        <text class="cuIcon-github text-grey"></text>
+        <text class="text-grey">GitHub</text>
+      </view>
+    </view>
+    <view class="cu-item arrow">
+      <navigator class="content" url="/pages/about/about/about" hover-class="none">
+        <image src="/img/logo.png" class="png" mode="aspectFit" style="filter: contrast(0);"></image>
+        <text class="text-grey">关于《也无风雨也无晴》</text>
+      </navigator>
+    </view>
+
+    <view class="cu-item arrow">
+      <view class="content" bindtap="showQrcode">
+        <text class="cuIcon-appreciatefill text-red"></text>
+        <text class="text-grey">点我点我~(*^▽^*)</text>
+      </view>
+    </view>
+
+    <view class="cu-item arrow">
+      <navigator class="content" url="/pages/about/log/log" hover-class="none">
+        <text class="cuIcon-formfill text-green"></text>
+        <text class="text-grey">项目记录</text>
+      </navigator>
+    </view>
+
+
+
+    <view class="cu-item arrow">
+      <button class="cu-btn content" open-type="feedback">
+        <text class="cuIcon-writefill text-cyan"></text>
+        <text class="text-grey">问题反馈(ಥ﹏ಥ)</text>
+      </button>
+    </view>
+
+  </view>
+  <view class="cu-tabbar-height"></view>
+</scroll-view>

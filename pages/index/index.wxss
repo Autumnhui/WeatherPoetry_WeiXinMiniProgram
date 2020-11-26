@@ -1,0 +1,127 @@
+
+
+/* .BgPic {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  z-index: -999;
+  margin: 10px auto;
+  background: linear-gradient(#92a3b49d, #16918a);
+} */
+/* #13bdce 33%, #0094d9 66%, */
+.BgPic {
+    position: relative;
+    height: 900px; 
+    background: #0299d8;
+    background: linear-gradient(77deg, #95a47a 0%,#999999 50%,#a59277 100%);
+    background-size: 400%;
+    background-position: 0% 100%;
+    animation: gradient 30s ease-in-out infinite;}
+
+@keyframes gradient{50%{background-position:100% 0}
+}
+
+.tianqi_pic{
+  position: absolute;
+  top:87px;
+  left: 30px;
+  width: 150px;
+  height: 150px;
+} 
+
+.today{
+  position: absolute;
+  top:250px;
+  left: 30px;
+  width: 150px;
+  
+  text-align: center;
+  text-shadow: #797979 -2px 2px 5px;
+  letter-spacing: 7px;
+}
+
+.chengshi,.tianqi,.wendu,.shicheng{
+  padding: 7px;
+  font-size: 25px;
+}
+
+
+.sentence1{
+  /* font-family: aaa; */
+  position: absolute;
+  width: 30px;
+  font-size: 30px;
+  top: 87px;
+  right: 30px;
+  text-shadow: #797979 -2px 2px 5px;
+  writing-mode: tb-rl;
+  letter-spacing: 7px;
+}
+
+.sentence2{
+  /* font-family: aaa; */
+  position: absolute;
+  width: 30px;
+  font-size: 30px;
+  top: 140px;
+  right: 80px;
+  text-shadow: #797979 -2px 2px 5px;
+  writing-mode: tb-rl;
+  letter-spacing: 7px;
+}
+
+.jianjie {
+  /* font-family: aaa; */
+  position: absolute;
+  width: 30px;
+  font-size: 14px;
+  top: 77px;
+  /* right: 120px; */
+  /* border: 20px; */
+  text-shadow: #797979 -2px 2px 5px;
+  writing-mode: tb-rl;
+  letter-spacing: 2px;
+  padding: 5px;
+  color: brown;
+  height: 400px;
+}
+
+
+
+/* 
+.shuaxin{
+  position: absolute;
+  right:10px;
+  bottom: 25px;
+} */
+
+
+.menus .menu,
+.menus .share {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  position: fixed;
+  z-index: 100;
+  bottom: 150rpx;
+  right: 70rpx;
+  opacity: 0;
+}
+.menus .share {
+  background: rgba(0, 0, 0, 0);
+}
+.menus .main {
+  opacity: 1;
+}
+
+/* .cu-tag{
+  writing-mode: tb-rl;
+  letter-spacing: 7px;
+  position: absolute;
+  font-size: 15px;
+  top: 180px;
+  right: 200px;
+} */

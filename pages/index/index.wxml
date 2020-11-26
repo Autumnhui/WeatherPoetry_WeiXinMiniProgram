@@ -1,0 +1,116 @@
+
+<!-- 背景图/标题 -->
+
+<view class="BgPic">
+<!-- <image class='BgPic' src="/image/a.jpg"></image> -->
+<!-- <cu-custom>
+  <view slot="content" style="font-weight:777;">{{shike}}</view>
+</cu-custom> -->
+</view>
+
+<!-- 今日天气 -->
+
+<!-- 天气图片 -->
+<view>
+  <image class="tianqi_pic" src="../../img/icon/{{img}}.png"></image>
+</view>
+
+<!-- 天气描述 -->
+<view class="today">
+  <view class="chengshi">{{chengshi}}</view>
+  <view class="tianqi">{{tianqi}}</view>
+  <view class="wendu">{{wendu}} °C</view>
+  <!-- <view class="shicheng">{{shicheng}}</view> -->
+</view>
+
+
+
+
+<!-- 诗词 -->
+<view class="shici">
+
+<view class="TuiJianShiJu">
+  <view class="sentence1">{{sentence1}}</view>
+  <view class="sentence2">{{sentence2}}{{sentence3}}  
+    <view class="jianjie" bindtap="showModal" data-target="Modal" style="text-decoration: underline">{{zuozhe}} ·《{{timu}}》
+    </view>
+  </view>
+</view>
+
+<!-- 点击诗词简介详细弹窗 -->
+<view class="cu-modal {{modalName=='Modal'?'show':''}}">
+<view class="cu-dialog">
+  <view class="cu-bar bg-white justify-end">
+    <view class="content" style="width: 100%;">《{{timu}}》</view>
+    <view class="action" bindtap="hideModal">
+      <text class="cuIcon-close text-red"></text>
+    </view>
+  </view>
+  <view class="padding-xl" style="padding-bottom: 20px;padding: 2px;">
+<view class="jieshao" style="padding-bottom: 15px;">
+<view class="cu-tag bg-blue light">{{chaodai}}</view><view class="cu-tag bg-brown light">{{zuozhe}}</view><text>\n</text>
+</view>
+<view class="yuanwen" style="margin-left: 40px;margin-right: 40px;margin-bottom: 20px;"><text>{{yuanwen}}</text></view>
+<view class="cu-tag bg-blue light" style="margin-bottom: 20px;">推荐理由：{{biaoqian}}</view>
+  </view>
+</view>
+</view>
+
+</view>
+
+
+<!-- 地址选择 -->
+<!-- <view class="dizhixuanze">
+<picker mode="region" bindchange="bindRegionChange" value="{{region}}" custom-item="{{customItem}}" class="dizhixuanze">
+  <view class="cu-form-group">
+    <view class="title">你在“{{region[0]}}，{{region[1]}}，{{region[2]}}”</view>
+  </view>
+  </picker>
+</view> -->
+
+
+<!-- 刷新按钮 -->
+<!-- <view class="shuaxin" bindtap="shuaxin"><text class="cuIcon-refresh lg text-gray" style="font-size: 28px;color: white;"></text></view> -->
+
+<!-- 抽屉 -->
+<!-- <view class="cu-bar bg-white margin-top">
+
+  <view class="action">
+
+    <button class="cu-btn bg-blue shadow margin-left" bindtap="showModal" data-target="DrawerModalR">Right</button>
+  </view>
+</view>
+<view class="cu-modal drawer-modal justify-start {{modalName=='DrawerModalL'?'show':''}}" bindtap="hideModal">
+  <view class="cu-dialog basis-lg" catchtap style="top:{{CustomBar}}px;height:calc(100vh - {{CustomBar}}px)">
+    <view class="cu-list menu text-left">
+      <view class="cu-item arrow" wx:for="{{5}}" wx:key>
+        <view class="content">
+          <view>Item {{index +1}}</view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
+
+<view class="cu-modal drawer-modal justify-end {{modalName=='DrawerModalR'?'show':''}}" bindtap="hideModal">
+  <view class="cu-dialog basis-lg" catchtap style="top:{{CustomBar}}px;height:calc(100vh - {{CustomBar}}px)">
+    <view class="cu-list menu text-left">
+      <view class="cu-item arrow" wx:for="{{5}}" wx:key>
+        <view class="content">
+          <view>Item {{index +1}}</view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view> -->
+
+
+  <!-- 悬浮菜单 -->
+<view class='menus' >
+
+    <image src="/img/share.png" animation="{{animationOne}}" class="menu" ></image>  <button plain='true' open-type='share' animation="{{animationOne}}" class='share'></button>
+    <image src="/img/renew.png" animation="{{animationTwo}}" class="menu" bindtap="shuaxin"></image>
+    <picker mode="region" bindchange="bindRegionChange" value="{{region}}" custom-item="{{customItem}}" class="dizhixuanze"><image src="/img/position.png" animation="{{animationThree}}" class="menu" animation="{{animationThree}}"></image></picker>
+    <image src="/img/more.png" animation="{{animationFour}}" class="menu" catchtap="menuToAbout"></image>
+    <image src="/img/chu.png" animation="{{animationMain}}" class="menu.main" catchtap="menuMain"></image>
+  </view>
